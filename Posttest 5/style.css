@@ -1,0 +1,387 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.header_web {
+    background-color: #454545;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 3px 10px;
+    color: white;
+    font-style: italic;
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    padding: 2px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #454545;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+.navbar {
+    background-color: #454545;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    float: left;
+    display: block;
+}
+
+a:hover {
+    background-color: #111;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: rgb(8, 104, 72);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.isisidebar img {
+    width: 60px;
+    float: left;
+    margin-right: 20px;
+}
+
+.isisidebar h4 {
+    text-align: justify;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.isisidebar {
+    text-align: justify;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.content {
+    background-image: url(aset/background_content.png);
+    background-size: cover;
+    color: white;
+    flex: 1;
+    padding: 30px;
+    text-align: justify;
+}
+
+.glass {
+    font-size: 18px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.unit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -5px; 
+}
+
+.box {
+    flex: 1 1 140px; 
+    padding: 0.75rem;
+    text-align: center;
+    position: relative;
+    /* margin: 5px;  */
+    min-width: 140px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.angka {
+    font-size: 2.2rem; 
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    line-height: 1;
+}
+
+.label {
+    font-size: 0.8rem; 
+    text-transform: uppercase;
+    line-height: 1.2;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.terjual {
+    background-color: #FFA500;
+    color: #000000;
+}
+
+.tersedia {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        flex: 1 1 160px;
+        padding: 1rem;
+        min-width: 160px;
+    }
+
+    .angka {
+        font-size: 2.5rem;
+    }
+
+    .label {
+        font-size: 0.9rem;
+    }
+}
+
+.listings-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.listing-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.listing-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.listing-details {
+    background-color: #454545;
+    color: white;
+    padding: 15px;
+}
+
+.listing-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.listing-location {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.listing-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.listing-buttons {
+    display: flex;
+    padding: 15px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-detail {
+    background-color: white;
+    color: #454545;
+    border: 1px solid #454545;
+    margin-right: 10px;
+}
+
+
+.container-form {
+    /* max-width: 1200px; */
+    padding: 20px;
+}
+
+.form-section {
+    background-color: #ffc107;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-section h1 {
+    color: #454545;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #ffffff;
+    color: #454545;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #454545;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 300px;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .glass {
+        font-size: 20px;
+    }
+
+    .listing-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        width: 400px;
+    }
+
+    .listing-card {
+        width: calc(33.333% - 20px);
+    }
+
+    .box {
+        flex: 1 1 180px;
+        padding: 1.25rem;
+        min-width: 180px;
+    }
+
+    .angka {
+        font-size: 2.8rem;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+}
+
+.kontak-info img {
+    width: 20px;
+    height: 20px;
+}
+
+
