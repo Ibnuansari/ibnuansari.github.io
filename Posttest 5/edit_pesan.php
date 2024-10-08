@@ -106,7 +106,7 @@
   </head>
   <body>
       <center>
-        <h1>Edit Unit <?php echo $data['nama']; ?></h1>
+        <h1>Edit Pesan <?php echo $data['nama']; ?></h1>
       <center>
       <form method="POST" action="proses_edit.php" enctype="multipart/form-data" >
       <section class="base">
@@ -147,11 +147,13 @@
         <div>
           <button type="submit">Simpan Perubahan</button>
         </div>
+
+        <div class="listing-buttons">
+          <a href="index.php" class="btn btn-detail"><< Kembali</a>
+        </div>
         </section>
       </form>
 
-      <div class="listing-buttons">
-        <a href="index.php" class="btn btn-detail"><< Kembali</a>
-      </div>
+      
   </body>
 </html>
