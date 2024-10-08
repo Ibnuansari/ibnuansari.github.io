@@ -128,16 +128,14 @@
           <label>email</label>
           <input type="email" name="email" value="<?php echo $data['email']; ?>" />
         </div>
-        <div>
-          <label>Perihal</label>
-          <div class="form-group" align="left">
-          <select name="perihal" required>
-            <option value="">Perihal</option>
-            <option value="<?php echo $data['perihal']; ?>">Info Rumah</option>
-            <option value="<?php echo $data['perihal']; ?>">Booking Rumah</option>
-            <option value="<?php echo $data['perihal']; ?>">Jadwal Kunjungan</option>
-          </select>
-        </div>
+        <label>Perihal</label>
+        <div class="form-group" align="left">
+            <select name="perihal" required>
+                <option value="">Perihal</option>
+                <option value="Info Rumah" <?php echo ($data['perihal'] == 'Info Rumah') ? 'selected' : ''; ?>>Info Rumah</option>
+                <option value="Booking Rumah" <?php echo ($data['perihal'] == 'Booking Rumah') ? 'selected' : ''; ?>>Booking Rumah</option>
+                <option value="Jadwal Kunjungan" <?php echo ($data['perihal'] == 'Jadwal Kunjungan') ? 'selected' : ''; ?>>Jadwal Kunjungan</option>
+            </select>
         </div>
         
         <div>
