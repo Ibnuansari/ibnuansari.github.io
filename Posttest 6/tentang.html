@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <style>
+        body {
+            padding: 50px;
+            background-color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            font-size: 18px;
+            background-color: #FFA500;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 150px;
+            height: 200px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            margin: 0;
+            font-weight: bold;
+            color: white;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 15px;
+            margin: 0;
+            color: white;
+        }
+
+        p {
+            text-align: justify;
+            margin: 20px auto 0;
+            color: white;
+            max-width: 450px;
+        }
+
+        .listing-buttons {
+            display: flex;
+            padding: 15px;
+        }
+
+        .btn {
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .btn-detail {
+            background-color: white;
+            color: #454545;
+            border: 1px solid #454545;
+            margin-right: 10px;
+        }
+
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            .main {
+                font-size: 16px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+                width: 100%;
+            }
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .main {
+                width: 100%;
+            }
+
+            p {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="aset/profil.jpeg" alt="profil">
+        <h1>M Ibnu Ansari</h1>
+        <div class="text"><strong>Owner</strong></div>
+        <p>
+            Saya adalah Owner dari Perumahan Cassamora Hills, 
+            sebuah pengembangan hunian prestisius yang berfokus pada kenyamanan, 
+            keamanan, dan gaya hidup modern. Dengan pengalaman lebih dari 20 tahun di industri properti, 
+            Saya memimpin tim profesional dalam menciptakan lingkungan perumahan yang berkualitas tinggi dan berkelanjutan.
+        </p>
+
+        <div class="listing-buttons">
+            <a href="index.html" class="btn btn-detail"><< Kembali</a>
+        </div>
+    </div>
+</body>
+</html>
