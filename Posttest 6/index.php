@@ -99,7 +99,7 @@ include('koneksi.php');
     </style>
 </head>
 <body>
-    <center><h1>Data Produk</h1></center>
+    <center><h1>Data Pesan</h1></center>
     <div class="table-container">
         <table>
             <thead>
